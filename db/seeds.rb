@@ -6,10 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 puts 'Cleaning database...'
-Ingedient.destroy_all
+Ingredient.destroy_all
 
 puts 'Creating ingredients...'
-ingredients_attributes = ([{ name: 'lemon' }, { name: 'ice' }, { name: 'mint_leaves' }])
-
-Ingedient.create(ingredients_attributes)
+Ingredient.create(name: "lemon")
+Ingredient.create(name: "ice")
+Ingredient.create(name: "mint leaves")
 puts 'Finished!'
